@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="boot.css">
+    <link rel="stylesheet" href="boot/css/bootstrap.min.css">
+
+    <!-- Icones fontawesome -->
+    <link rel="stylesheet" href="font/css/all.min.css">
+
+    <!-- Font Signica -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Signika+Negative:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font LUGRASIMO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font ROBOTO  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Animate on scroll CSS -->
+    <link rel="stylesheet" href="aos/dist/aos.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            VoitureCar
+        </div>
+        <nav class="nav">
+            <a href="Accueil">Accueil</a>
+            <a href="Contact">Contact</a>
+            <a href="About">About</a>
+            <a href="Policy">Policy</a>
+            <span href="Connexion" class="bouton">Connexion</span>
+        </nav>
+    </header>
+
+    <!-- Partie Main -->
+    <main>
+        <!-- Section scroll with voiture -->
+        <section class="section-voiture container-fluid">
+            <div class="container-fluid part-1">
+                <div class="mt-4 voiture-block">
+                    <div class="rubrique" data-aos="flip-left" data-aos-delay="100" data-aos-duration="1500">
+                        La Référence de la <span class="best">Meilleur</span> gamme de voiture dans toute la
+                        région.
+                    </div>
+                    <hr>
+                    <div class="image-voiture">
+                        <img src="img/voiturep.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section -->
+
+        <section class="bg-black list-todo">
+            <div class="container content-carousel">
+                <h1 class="text-center text-light title-choose">
+                    Le model qui vous convient.
+                </h1>
+                <div id="carouselExampleInterval" class="carousel slide vb-carou" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="img/bmw.png" class="d-block imagecarou" alt="...">
+                            <h2>BMW</h2>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="img/porshe.png" class="d-block imagecarou" alt="...">
+                            <h2>PORSHE</h2>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/toyota_camry.png" class="d-block imagecarou" alt="...">
+                            <h2>TOYOTA CAMRY</h2>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev d-block" type="button"
+                        data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next d-block" type="button"
+                        data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section troisième -->
+
+        <section class="bg-dark-subtle menu-flex">
+            <div class="container">
+                <h1 class="text-center">Nos services</h1>
+                <div class="row panel">
+                    <div class="col-md-4 action take-car">
+                        <div class="icons icon-takecar"><i class="fa-solid fa-car"></i></div>
+                        <h2>Prendre un voiture</h2>
+                        <p>Profitez du plaisir de prendre une voiture chez nous! Je vous garantit que vous ne serez pas
+                            déçu</p>
+                    </div>
+                    <div class="col-md-4 action rent-car">
+                        <div class="icons icon-rentcar"><i class="fa-solid fa-person-walking-arrow-loop-left"></i></div>
+                        <h2> Louer la voiture </h2>
+                        <p>Vous avez la possibilité de louer une voiture chez nous même pour ne serait-ce qu'une journée
+                            de plaisir.
+                            Que cela soit en famille ou entre amis!!</p>
+                    </div>
+                    <div class="col-md-4 action check-driver">
+                        <div class="icons icon-checkdriver"><i class="fa-solid fa-user-check"></i></div>
+                        <h2>Cherchez un chauffeur</h2>
+                        <p>Fatigué de faire le travail vous-même!! Ne vous en faites pas. Vous pouvez louez un chauffeur
+                            qui vous accompagnera
+                            où que vous soyez.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-sondage">
+            <div class="sondagediv">
+                <div class="sonda livraison">
+                    <h4>LIVRAISONS</h4>
+                    <p>6,5K</p>
+                </div>
+                <div class="sonda hr abonnes">
+                    <h4>FOLLOWERS</h4>
+                    <p>10,3M</p>
+                </div>
+                <div class="sonda hr voitures">
+                    <h4>CARS</h4>
+                    <p>5,4K</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="comments">
+            <div class="temoign">
+                <h2>Testimonials</h2>
+                <div class="testimony">
+                    <div class="testi" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+                        <div class="profile">
+                            <img src="" alt="">
+                            <h4>JANE WILLIAMS</h4>
+                            <p>Regular client</p>
+                            <hr>
+                            <div class="comment">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Qui dolor minima quaerat ipsum ipsam inventore non
+                                perferendis est unde a, provident
+                                corrupti obcaecati voluptas iste aperiam
+                                libero blanditiis aliquid. Quo?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                        <div class="profile">
+                            <img src="" alt="" class="image">
+                            <h4>JOHN DOE</h4>
+                            <p>Regular client</p>
+                            <hr>
+                            <div class="comment">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Qui dolor minima quaerat ipsum ipsam inventore non
+                                perferendis est unde a, provident
+                                corrupti obcaecati voluptas iste aperiam
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+                        <div class="profile">
+                            <img src="" alt="">
+                            <h4>KATE PETERSON</h4>
+                            <p>Regular client</p>
+                            <hr>
+                            <div class="comment">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Qui dolor minima quaerat ipsum ipsam inventore non
+                                perferendis est unde a, provident
+                                corrupti obcaecati voluptas iste aperiam
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="partner">
+                <h2>Nos partenaires</h2>
+                <div class="partner-logo">
+                    <a href="">
+                        <i class="fa-brands fa-amazon"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-amazon-pay"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-paypal"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-cc-amazon-pay"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-solid fa-coins"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="reduct">
+            <div class="bloc-pourcent">
+                <div class="pourcent">
+                    <p data-aos="zoom-in-up" data-aos-delay="50" data-aos-duration="500"> <span>50% </span>de réduction sur votre premier achat</p>
+                    <p data-aos="zoom-in-up" data-aos-delay="50" data-aos-duration="1000">Nos première clients reçoivent 50% de réduction sur leur premier achat</p>
+                    <a href="" class="btn btn-primary button">Procéder</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer">
+          <div class="logo-fooer">
+            <h2>Voiture Car</h2>
+            <p>Nous fournissons les meilleurs voitures pour une meilleure expérience de conduite</p>
+            <a href="" class="btn btn-secondary button">Faire une commance</a>
+          </div>  
+          <div class="about-footer">
+            <h3>A PROPOS</h3>
+            <a href="">A propos</a>
+            <a href="">Carrière</a>
+            <a href="">Medias</a>
+          </div>
+          <div class="contact-footer">
+            <h3>CONTACTS</h3>
+            <p>rodlitchhous@gmail.com</p>
+            <p>+22967648534</p>
+          </div>
+        </div>
+    </footer>
+
+    <!-- Script Bootstrap -->
+    <script src="boot/js/bootstrap.min.js"></script>
+
+    <!-- Script Animate On Scroll -->
+    <script src="aos/dist/aos.js"></script>
+
+    <!-- Initialisattion de l'animation -->
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

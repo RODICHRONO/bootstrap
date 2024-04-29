@@ -1,0 +1,557 @@
+/* Style Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Signika+Negative:wght@300..700&display=swap');
+
+/* Style Titilium */
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Signika+Negative:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+*, 
+*::after, 
+::before{
+    margin: 0;
+}
+
+body{
+    color: rgba(0, 0, 0, 0.6);
+   line-height: 1.3;
+   font-size: 14px;
+}
+
+/*
+===========================================
+Header 
+===========================================
+*/
+
+.header{
+    background-color: #242b4a;
+    background-image: linear-gradient(43deg, #4158D0 0%, #d0431e 52%, #FFCC70 100%);
+}
+
+.header .nav{
+    display: block;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.header .logo{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    padding: 11px 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(28, 23, 16, 0.836);
+    padding-right: 12px;
+    transition: color 250ms;
+}
+
+
+.nav .bouton{
+    display: inline-block;
+    transform: scale(1);
+    text-align: center;
+    width: 85px;
+    cursor: pointer;
+    transition: transform 200ms ease-in, background-color 200ms, color 100ms;
+    border-radius: 50px;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.nav .bouton:hover{
+    transform: scale(1.15);
+    background-color: rgb(24, 51, 75);
+    color: aliceblue;
+}
+
+.nav a:hover{
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/*
+===========================================
+Section voiture infos 
+===========================================
+*/
+
+.section-voiture{
+    height: 100%;
+}
+
+.voiture-block{
+    position: relative;
+}
+
+.part-1 .image-voiture{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.part-1 img{
+    width: 100%;
+}
+
+.part-1 .rubrique {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    font-family: "Signika Negative", sans-serif;
+    line-height: 2em;
+    letter-spacing: 5px;
+    text-shadow: 4px 3px 4px #313f85c7;
+}
+
+.part-1 .rubrique::before{
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    left: -6px;
+    display:inline-block;
+    width: 40px;
+    height: 1px;
+    border: 3px solid #4158D0;
+}
+
+.part-1 .rubrique::after{
+    content: '';
+    display: block;
+    border: 3px solid #4158D0;
+}
+
+.part-1 .rubrique .best{
+    font-size: 1em;
+    background-color: black;
+    color: rgb(228, 225, 220);
+    padding: 2px;
+    border-left: 5px solid rgba(214, 133, 33, 0.825);
+    font-family: "Signika Negative", sans-serif;
+}
+
+/*
+===========================================
+Carrousel voiture
+===========================================
+*/
+
+.list-todo .title-choose{
+    font-family: "Raleway", serif;
+    padding-top: 50px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.list-todo .vb-carou{
+    position: relative;
+    margin-top: 70px;
+}
+
+.list-todo .vb-carou .carousel-inner{
+    position: relative;
+    width: 100%;
+    display: block;
+   
+}
+
+.carousel-inner img{
+    /* display: block; */
+    width: 70%;
+    margin: auto;
+}
+
+.carousel-inner h2{
+   /* font: 2.5em; */
+   font-size: 1em;
+   width: 50%;
+   text-align: center;
+   margin: auto;
+   margin-bottom: 10px;
+   color: #b5c227d0;
+}
+
+/*
+===========================================
+Section troisième
+===========================================
+*/
+.menu-flex{
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
+.menu-flex .action{
+    border: 1px solid transparent;
+    background-color: #f6f7fa;
+    border-radius: 10px;
+    width: 90%;
+    margin: 12px auto;
+    text-align: center;
+}
+
+.menu-flex .icons{
+    font-size: 2em;
+    color: #5ab37a;
+}
+
+.action p{
+    font-size: 16px;
+    font-family: "Titilium", sans-serif;
+    font-weight:calc(100/2);
+}
+
+.action h2{
+    font-weight: 600;
+    font-size: 1.3em;
+    margin-bottom: 24px;
+}
+
+/* 
+    Section sondage
+*/
+
+.section-sondage .sondagediv{
+    text-align: center;
+    padding-top: 40px;
+}
+.sondagediv{
+    width: 100%;
+}
+.section-sondage .sonda{
+    margin-bottom: 40px;
+}
+.section-sondage .hr::before{
+    content: "";
+    border: 1px solid saddlebrown;
+    display: block;
+    width: 40%;
+    margin: auto;
+    transform: translate(0, -30px);
+}
+.section-sondage .sonda h4{
+    font-weight: 600;
+}
+.section-sondage .sonda p{
+    color: #5ab37a;
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*
+===========================================
+Section Témoignage
+===========================================
+*/
+
+.comments{
+    background-color: beige;
+    padding-top: 70px;
+    height: 100%;
+}
+
+.comments .testi .profile h4{
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.comments .testi .profile p{
+    color: rgb(101, 101, 188);
+}
+
+.comments .temoign h2{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.comments .testi{
+    margin-bottom: 30px;
+    border-radius: 20px;
+    width: 30%;
+    height: auto;
+    box-shadow: 10px 5px 20px rgb(23, 21, 21);
+    padding: 20px;
+    
+}
+.comments .testimony{
+    display: flex;
+    justify-content: space-around;
+    max-width:100%;
+    flex-wrap: wrap;
+}
+.partner h2{
+    margin: 50px 0;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.partner .partner-logo a{
+    display: block;
+}
+.partner-logo{
+    display: flex;
+    justify-content: space-around;
+}
+.partner-logo i{
+    font-size: 1.5em;
+    color: #aeb1bcd8;
+    margin-bottom: 30px;
+}
+.partner-logo i:hover{
+    color: rgba(83, 57, 57, 0.601);
+}
+
+.reduct .pourcent .button:hover{
+    color: #dee0e9;
+    background-color: #242b4a;
+} 
+
+/*
+===========================================
+Section Réduction
+===========================================
+*/
+.reduct{
+    background: linear-gradient(rgba(32, 24, 151, 0.7), rgba(49, 33, 152, 0.7)), url(img/voiture.jpeg);
+    background-size: cover;
+    height: 100%;
+}
+.reduct .pourcent{
+    font-size: 1em;
+    width: 60%;
+    color: #f6f7fa;
+    font-family: "Roboto", sans-serif;
+}
+.reduct .bloc-pourcent{
+    padding: 60px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: end;
+}
+.reduct .bloc-pourcent span{
+    background-color: #242b4a;
+    display: block;
+    width: 70px;
+    text-align: center;
+    height: 70px;
+    margin: 0 auto;
+    padding-top: 7px;
+    border-radius: 50%;
+    font-size: 1em;
+}
+.reduct .bloc-pourcent .pourcent p:first-child{
+    font-size: 35px;
+}
+.reduct .bloc-pourcent .pourcent p:last-child{
+    font-size: 25px;
+}
+
+@media only screen and (min-width: 700px){
+    .reduct .pourcent{
+        font-size: 2rem;
+        line-height: 60px;
+        width: 50%;
+        color: #f6f7fa;
+        font-family: "Roboto", sans-serif;
+    }
+    .reduct .bloc-pourcent .pourcent p span{
+        width: 100px;
+        text-align: center;
+        height: 100px;
+        margin: 0 auto;
+        padding-top: 15px;
+        border-radius: 50%;
+        font-size: 1.5em;
+    }
+    .reduct .pourcent{
+        font-size: 1em;
+        line-height: 60px;
+        width: 50%;
+        color: #f6f7fa;
+        font-family: "Roboto", sans-serif;
+    }
+    .reduct .bloc-pourcent .pourcent p:first-child{
+        font-size: 2rem;
+    }
+    .reduct .bloc-pourcent .pourcent p:nth-child(2){
+        font-size: 2em;
+    }
+}
+
+/*
+===========================================
+Version Mobile  
+===========================================
+*/
+
+@media only screen and (min-width: 1200px) {
+    .part-1 .rubrique {
+        position: relative;
+        font-size: 25px;
+        display: block;
+        margin-top: 10px;
+        width: 400px;
+    }
+    .part-1 .rubrique::before{
+        content: '';
+        position: relative;
+        top: -30px;
+        left: -2px;
+        display:inline-block;
+        width: 70px;
+        height: 1px;
+        border: 3px solid #4158D0;
+    }
+    
+    .part-1 .rubrique::after{
+        display: none;
+    }
+    .part-1 img{
+        width: 100%;
+    }
+
+    .part-1 .image-voiture{
+        padding-top: 80px;
+        width: 70%;
+    }
+    .part-1 .voiture-block{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+@media only screen and (min-width: 800px){
+    .carousel-inner h2{
+        font-size: 2em;
+    }
+    .action h2{
+        font-size: 1.5em;
+    }
+    .menu-flex .action{
+        padding-top: 50px;
+        width: 32%;
+    }
+    .menu-flex .panel{
+        width: 100%;
+    }
+    .menu-flex .icons{
+        font-size: 4em;
+        color: #5ab37a;
+        margin-bottom: 24px;
+    }
+
+    
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1200px){
+    .part-1 .rubrique {
+        width: 70%;
+        text-align: center;
+        margin: auto;
+        margin-top: 30px;
+        font-size: 2rem;
+    }
+    .part-1 .rubrique::before{
+        content: '';
+        position: relative;
+        top: -30px;
+        left: -2px;
+        display:inline-block;
+        width: 70px;
+        height: 1px;
+        border: 3px solid #4158D0;
+    }
+    .part-1 .image-voiture{
+        width: 100%;
+        margin: auto;
+    }
+    .part-1 img{
+        display: block;
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+        padding: 0 30px;
+    }
+    .header .logo, 
+    .header .nav{
+        padding: 0;
+    }
+    .header a{
+        padding-right: 25px;
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .section-sondage .sondagediv{
+        display: flex;
+        justify-content: center;
+        width: 75%;
+        margin: auto;
+    }
+    .section-sondage .sonda{
+        width: 100%;
+        padding-top: 70px;
+    }
+    .section-sondage .sonda h4{
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    .section-sondage .sonda p{
+        color: #5ab37a;
+        font-weight: 300;
+        font-size: 1.3em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .section-sondage .hr::before{
+        display: none;
+    }
+    /* .section-sondage .hr::after{
+        content: "";
+        display: inline;
+        width: 50%;
+        
+        border: 1px solid firebrick;
+        transform: translate(100px, 50px);
+    } */
+}
+
+@media only screen and (max-width: 1200px){
+    .comments .testi{
+        width: 36%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .comments .testi{
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .partner h2{
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 100px;
+    }
+    .partner-logo i{
+        font-size: 55px;
+        color: #aeb1bcd8;
+        margin-bottom: 90px;
+    }
+    .comments{
+        height: 100%;
+    }
+}
