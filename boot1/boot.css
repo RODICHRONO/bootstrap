@@ -401,6 +401,9 @@ Footer
     .logo-footer{
         width: 35%;
     }
+    .footer .logo-footer h2{
+        font-size: 40px;
+    }
     .footer .logo-footer p+a{
         margin-top: 50px;
         width: 60%;
