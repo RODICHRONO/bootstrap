@@ -318,6 +318,7 @@ Section Réduction
 .reduct{
     background: linear-gradient(rgba(32, 24, 151, 0.7), rgba(49, 33, 152, 0.7)), url(img/voiture.jpeg);
     background-size: cover;
+    background-position: center;
     height: 100%;
 }
 .reduct .pourcent{
@@ -350,35 +351,65 @@ Section Réduction
     font-size: 25px;
 }
 
-@media only screen and (min-width: 700px){
-    .reduct .pourcent{
-        font-size: 2rem;
-        line-height: 60px;
-        width: 50%;
-        color: #f6f7fa;
-        font-family: "Roboto", sans-serif;
+/*
+===========================================
+Footer  
+===========================================
+*/
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+}
+.footer .logo-footer p+a{
+    font-size: 14px;
+    border: 1px solid transparent;
+    display: block;
+    width: 41%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+    text-align: center;
+    background-color: #101920;
+}
+.footer .logo-footer p+a:hover{
+    background-color: #37434b;
+}
+.section-footer{
+    font-size: 14px;
+}
+.footer .about-footer h3~a{
+    text-decoration: none;
+    padding-right: 10px;
+    transition: color 200ms;
+}
+.footer .about-footer h3~a:hover{
+    color: #cbe2ea;
+}
+
+@media only screen and (min-width: 1000px){
+    .footer-div{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        margin-top: 20px;
+        /* border-style: none; */
     }
-    .reduct .bloc-pourcent .pourcent p span{
-        width: 100px;
+    .logo-footer{
+        width: 35%;
+    }
+    .footer .logo-footer p+a{
+        margin-top: 50px;
+        width: 60%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-        height: 100px;
-        margin: 0 auto;
-        padding-top: 15px;
-        border-radius: 50%;
-        font-size: 1.5em;
-    }
-    .reduct .pourcent{
-        font-size: 1em;
-        line-height: 60px;
-        width: 50%;
-        color: #f6f7fa;
-        font-family: "Roboto", sans-serif;
-    }
-    .reduct .bloc-pourcent .pourcent p:first-child{
-        font-size: 2rem;
-    }
-    .reduct .bloc-pourcent .pourcent p:nth-child(2){
-        font-size: 2em;
+        font-size: 20px;
     }
 }
 
@@ -553,5 +584,37 @@ Version Mobile
     }
     .comments{
         height: 100%;
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .reduct .pourcent{
+        font-size: 2rem;
+        line-height: 60px;
+        width: 50%;
+        color: #f6f7fa;
+        font-family: "Roboto", sans-serif;
+    }
+    .reduct .bloc-pourcent .pourcent p span{
+        width: 100px;
+        text-align: center;
+        height: 100px;
+        margin: 0 auto;
+        padding-top: 15px;
+        border-radius: 50%;
+        font-size: 1.5em;
+    }
+    .reduct .pourcent{
+        font-size: 1em;
+        line-height: 60px;
+        width: 50%;
+        color: #f6f7fa;
+        font-family: "Roboto", sans-serif;
+    }
+    .reduct .bloc-pourcent .pourcent p:first-child{
+        font-size: 2rem;
+    }
+    .reduct .bloc-pourcent .pourcent p:nth-child(2){
+        font-size: 2em;
     }
 }
