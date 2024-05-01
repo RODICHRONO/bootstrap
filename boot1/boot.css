@@ -373,10 +373,10 @@ Footer
     text-decoration: none;
     padding: 3px;
     text-align: center;
-    background-color: #101920;
+    background-color: #271c74;
 }
 .footer .logo-footer p+a:hover{
-    background-color: #37434b;
+    background-color: #1d6fa5;
 }
 .section-footer{
     font-size: 14px;
