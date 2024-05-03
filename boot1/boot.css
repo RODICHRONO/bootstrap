@@ -24,19 +24,100 @@ Header
 .header{
     background-color: #242b4a;
     background-image: linear-gradient(43deg, #4158D0 0%, #d0431e 52%, #FFCC70 100%);
+    width: 100%;
+    height: 80px;
+}
+
+.header-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header .nav{
-    display: block;
-    text-align: center;
-    padding-bottom: 15px;
+    display: none;
 }
 
+/*
+===========================================
+Header Burger
+===========================================
+*/
+
+.header .burger-menu-button{
+    font-size: 1.5rem;
+    padding: 15px;
+}
+
+.header .burger-menu a, .header .burger-menu span{
+    display: block;
+}
+
+.header .burger-menu{
+    /* display: none; */
+    height: 0;
+    position: absolute;
+    right: 1rem;
+    top: 60px;
+    width: 230px;
+    background-color: rgba(0, 0, 0, 0.208);
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(15px);
+    transition: height 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 2;
+}
+
+.header .burger-menu.open{
+    height: 250px;
+}
+
+.header .burger-menu a{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    transition: color 250ms;
+}
+
+.header .burger-menu a:hover{
+    color: #9372b0;
+}
+
+.header .burger-menu .bouton{
+    background-color: #1d6fa5;
+    border: 1px solid transparent;
+    width: 70%;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1);
+    cursor: pointer;
+    transition: transform 200ms ease-in, background-color 200ms, color 100ms;
+    border-radius: 5px;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.header .burger-menu .bouton:hover{
+    transform: scale(1.15);
+    border: 1px solid #fff;
+    background-color: rgb(24, 51, 75);
+    color: aliceblue;
+}
+/*
+===========================================
+Header Burger
+===========================================
+*/
+
+
 .header .logo{
-    font-size: 24px;
-    text-align: center;
+    font-size: 2rem;
     font-weight: 500;
-    padding: 11px 0;
+    padding: 15px;
     font-family: "Roboto", sans-serif;
 }
 
@@ -49,7 +130,7 @@ Header
 }
 
 
-.nav .bouton{
+.header .header-menu .nav .bouton{
     display: inline-block;
     transform: scale(1);
     text-align: center;
@@ -60,13 +141,13 @@ Header
     transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-.nav .bouton:hover{
+.header .header-menu .nav .bouton:hover{
     transform: scale(1.15);
     background-color: rgb(24, 51, 75);
     color: aliceblue;
 }
 
-.nav a:hover{
+.header .header-menu .nav a:hover{
     color: rgba(255, 255, 255, 0.9);
 }
 
@@ -482,7 +563,7 @@ Version Mobile
     
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1200px){
+@media only screen and (min-width: 650px) and (max-width: 1200px){
     .part-1 .rubrique {
         width: 70%;
         text-align: center;
@@ -508,23 +589,6 @@ Version Mobile
         display: block;
         width: 70%;
         margin: auto;
-    }
-}
-
-@media only screen and (min-width: 600px){
-    .header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 90px;
-        padding: 0 30px;
-    }
-    .header .logo, 
-    .header .nav{
-        padding: 0;
-    }
-    .header a{
-        padding-right: 25px;
     }
 }
 
@@ -574,7 +638,7 @@ Version Mobile
     }
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 650px){
     .partner h2{
         font-size: 2rem;
         font-weight: 600;
@@ -619,5 +683,31 @@ Version Mobile
     }
     .reduct .bloc-pourcent .pourcent p:nth-child(2){
         font-size: 2em;
+    }
+}
+
+@media only screen and (min-width: 650px){
+    .header .header-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+        padding: 0 30px;
+    }
+    .header .logo, 
+    .header .nav{
+        padding: 0;
+    }
+    .header a{
+        padding-right: 25px;
+    }
+    .header .burger-menu-button{
+        display: none;
+    }
+    .header .header-menu .nav{
+        display: block;
+    }
+    .header .burger-menu {
+        display: none;
     }
 }
